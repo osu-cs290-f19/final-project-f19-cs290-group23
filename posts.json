@@ -1,11 +1,12 @@
 [
     {
-        "title": "Yummy Testpost!",
-        "ingredients": "1oz Pancakes, 2oz Granulated Sugar, 100 Metric Tons of Salt",
-        "imgurl": "https://placekitten.com/408/286",
-        "recipe": "To make a testpost, you need the tears of a dev",
-        "commentary": "I really enjoy testposts! Eat them with your friends!",
+        "title": "Macaroni and Cheese",
+        "ingredients": "1 Cup Milk, 1 Cup Cheddar Cheese, 1/2 Stick Butter, 2 Cups Macaroni Noodles",
+        "imgurl": "https://www.willcookforsmiles.com/wp-content/uploads/2019/01/mac-and-cheese-5.jpg",
+        "recipe": "First, boil the noodles. Then, make the sauce. Then, mix all together! Finally, eat!",
+        "commentary": "One of my favorite meals! I cook this all the time!",
         "user": "stevekei",
+        "likes": "0",
         "date": "12/9/19"
     },
     {
@@ -15,6 +16,7 @@
         "recipe": "To make a testpost, you need the tears of a dev",
         "commentary": "I really enjoy testposts! Eat them with your friends!",
         "user": "stevekei",
+        "likes": "0",
         "date": "12/9/19"
     },
     {
@@ -24,6 +26,7 @@
         "recipe": "To make a testpost, you need the tears of a dev",
         "commentary": "I really enjoy testposts! Eat them with your friends! ",
         "user": "stevekei",
+        "likes": "0",
         "date": "12/9/19"
     }
 ]
