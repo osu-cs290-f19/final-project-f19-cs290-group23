@@ -19,7 +19,7 @@ header h1 {
     margin-left: 82%;
 }
 
-a {
+header a{
     text-decoration: none;
     color: white;
 }
@@ -80,6 +80,22 @@ img {
     margin-right: 50%;
 }
 
+/* 404 Screen */
+
 .a404 {
     text-align: center;
+}
+
+/* Login and Miscellanous Screen */
+
+.misc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#info {
+    padding-top: 5px;
+    margin-top: 5px;
+    /* border-radius: 15px; todo? */
 }
