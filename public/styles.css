@@ -6,17 +6,26 @@ header {
     background: gray;
     margin: 0 0 0 0;
     display: flex;
-    position: relative;
-    padding: 0 10 0 10;
+    position: inherit;
+    padding: 0 0 0 10;
 }
 
-header h1 {
+.recipes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+header h1, p, h1, h2 {
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 0%;
 }
 
-.login-button{
-    margin-left: 82%;
+.create-recipe {
+    position: absolute;
+    right: 0.5%;
+    flex-direction: row;
+    text-align: right;
 }
 
 header a{
@@ -32,14 +41,16 @@ body {
     display: flex;
     max-width: 75%;
     max-height: 250px;
-    border: 1px solid black;
+    border: 7px solid gray;
     margin-top: 3%;
-    margin-right: 12.5%;
-    margin-left: 12.5%;
+    margin-left: 1%;
+    margin-right: 0%;
     flex: 1 0 auto;
     flex-wrap: wrap;
     flex-direction: column;
     align-content: flex-start;
+    background: lightgray;
+    border-radius: 10px;
 }
 
 #title, #ingredients, #recipe, #commentary, #user {   
@@ -52,7 +63,6 @@ body {
 #title, #ingredients, #recipe, #commentary, #user, #img {  
     display: flex;
     flex-direction: column;
-    align-items: right;
     height: 100%;
     width: 100%;
 }
@@ -62,13 +72,9 @@ img {
     margin: 1% 1% 1% 1%;
     max-width: 20%;
     max-height: 20%;
-    min-width: 20%;
     min-height: 20%;
+    width: max-content;
     align-self: flex-start;
-}
-
-#ingredients, #recipe, #commentary {
-
 }
 
 .post #user {
@@ -80,22 +86,48 @@ img {
     margin-right: 50%;
 }
 
+/* Side bar Popular Posts */
+.popular-posts {
+    position: fixed;
+    right: 0%;
+    top: 26%;
+    border: 7px solid gray;
+    background: lightgray;
+    border-radius: 10px;
+    width: 20%;
+    height: 60%;
+    text-align: center;
+}
+
+.categories a {
+    background: darkgray;
+    border: 2px solid darkgray;
+    color: white;
+    border-radius: 4px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+#filter-header {
+    width: 100%;
+    background: rgb(44, 44, 44);
+    margin: 0 0 0 0;
+    color: white;
+}
+.pop-posts-button:hover {
+    background: rgb(110, 110, 110);
+}
+
 /* 404 Screen */
 
 .a404 {
     text-align: center;
 }
 
-/* Login and Miscellanous Screen */
+/*Miscellanous Screens */
 
 .misc {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-#info {
-    padding-top: 5px;
-    margin-top: 5px;
-    /* border-radius: 15px; todo? */
 }
