@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+}
+
+header {
+    background: gray;
+    margin: 0 0 0 0;
+    display: flex;
+    position: relative;
+    padding: 0 10 0 10;
+}
+
+header h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 0%;
+}
+
+.login-button{
+    margin-left: 76%;
+}
+
+a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+.post {
+    display: flex;
+    max-width: 75%;
+    max-height: max-content;
+    border: 1px solid black;
+    margin-top: 3%;
+    margin-right: 12.5%;
+    margin-left: 12.5%;
+    flex: 1 0 auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#title, #img, #ingredients, #recipe, #commentary, #user {   
+    max-width: 20%;
+    margin: 0 0% 0 0;
+}
+
+#ingredients, #recipe, #commentary {
+}
+
+.post #user {
+    font-size: 24px;
+}
+.post #title {
+    min-width: max-content;
+    max-height: 36px;
+}
+
+.a404 {
+    text-align: center;
+}
