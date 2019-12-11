@@ -20,6 +20,25 @@ for(var i = 0; i < views.length; i++) {
     };
 }
 
+app.post('/addrecipe', function (req, res, next) {
+    if (req.body && req.body.title && req.body.ingredients && req.body.imgurl && req.body.recipe && req.body.commentary && req.body.user) {
+        fs.writeFileSync('./posts.json', {
+            "title": req.body.title,
+            "ingredients": req.body.ingredients,
+            "imgurl": imgurl,
+            "recipe": recipe,
+            "commentary": commentary,
+            "user": user,
+            "likes": 0,
+            "data": new Date()
+        })
+        res.status(200).send("Added post!");
+    }
+    else {
+        res.status(400).send("Post failed! Missing content.");
+    }
+});
+
 app.get('/', function (req, res, next) {
     res.render('posts', {posts : posts});
     res.status(200);

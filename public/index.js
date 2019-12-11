@@ -5,12 +5,16 @@ var newingredients = document.getElementById('newingredients');
 var newrecipemade = document.getElementById('newrecipe');
 var newnotes = document.getElementById('newnotes');
 
+var request = new XMLHttpRequest();
+var requestURL = '/addrecipe';
+
 function makeNewPost() {
     
 }
+var post;
 
 document.getElementById("refreshbutton").addEventListener("click", function(){
-    var post = {
+    post = {
         title: newname.value,
         user: newusername.value,
         imgurl: newphotourl.value,
