@@ -17,6 +17,6 @@ templates['blankpost'] = template({"compiler":[8,">= 4.3.0"],"main":function(con
     + alias4(((helper = (helper = helpers.commentary || (depth0 != null ? depth0.commentary : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"commentary","hash":{},"data":data,"loc":{"start":{"line":7,"column":36},"end":{"line":7,"column":50}}}) : helper)))
     + "</p>\r\n    <button class='like' id='like'>Like this Recipe! "
     + alias4(((helper = (helper = helpers.likes || (depth0 != null ? depth0.likes : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"likes","hash":{},"data":data,"loc":{"start":{"line":8,"column":53},"end":{"line":8,"column":62}}}) : helper)))
-    + " likes!</button>\r\n    <button class='moreinfo' id='moreinfo'>Join the discussion!</button>\r\n</div>";
+    + " likes!</button>\r\n</div>";
 },"useData":true});
 })();

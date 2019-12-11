@@ -52,6 +52,10 @@ app.post('/addrecipe', function (req, res, next) {
     }
 });
 
+app.post('/changecommentary', function (req, res, next) {
+    console.log(req.body);
+})
+
 app.get('/', function (req, res, next) {
     res.render('posts', {posts : posts});
     res.status(200);

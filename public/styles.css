@@ -45,7 +45,7 @@ body {
 .post {
     display: flex;
     max-width: 97%;
-    max-height: 350px;
+    max-height: 500px;
     border: 7px solid gray;
     margin-top: 3%;
     margin-left: 5%;
@@ -65,7 +65,18 @@ body {
     margin-bottom: 0px;
 }
 
-#like, #moreinfo {
+#addcomment {
+    display: none;
+    position: relative;
+    width: 20em;
+    height: 3em;
+    max-height: 3em;
+    max-width: 20em;
+    left: 30em;
+    bottom: 5em;
+}
+
+#like, #moreinfo, #submitinfo {
     display: flex;
     flex-wrap: wrap;
     background: lightblue;
@@ -74,7 +85,15 @@ body {
     width: 15em;
     align-content: center;
     position: relative;
-    top: 2.8em;
+    bottom: 1em;
+}
+
+#submitinfo {
+    display: none;
+    position: relative;
+    flex-wrap: wrap;
+    bottom: 2em;
+    left: 19em;
 }
 
 #username, #titlename {
@@ -194,6 +213,7 @@ body {
 }
 
 #filter-header {
+    display: none;
     width: 100%;
     max-width: 104px;
     max-height: 97.4px;
