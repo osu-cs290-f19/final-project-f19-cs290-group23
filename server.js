@@ -52,8 +52,11 @@ app.post('/addrecipe', function (req, res, next) {
     }
 });
 
-app.post('/changecommentary', function (req, res, next) {
-    console.log(req.body);
+app.post('/changecommentary/:recipe', function (req, res, next) {
+    posts[req.params.recipe].commentary = req.body.commentary;
+    console.log(posts);
+    fs.writeFileSync('./posts.json', JSON.stringify(posts, null, 2));
+    res.status(200).send("Added commentary!");
 })
 
 app.get('/', function (req, res, next) {
@@ -61,7 +64,7 @@ app.get('/', function (req, res, next) {
     res.status(200);
 });
 
-app.get('/createrecipe', function (req, res, next) {
+app.get('/createrecipe/:recipe', function (req, res, next) {
     res.render('createrecipe');
     res.status(200);
 });
