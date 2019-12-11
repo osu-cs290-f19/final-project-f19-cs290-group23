@@ -20,7 +20,7 @@ function aaa(index, event) {
     };
     var request = new XMLHttpRequest();
     var requestBody = JSON.stringify(newcomments);
-    request.open('POST', '/changecommentary/');
+    request.open('POST', '/changecommentary/' + index);
     request.setRequestHeader(
         'Content-Type', 'application/json'
     );
