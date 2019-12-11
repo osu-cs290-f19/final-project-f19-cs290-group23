@@ -25,6 +25,11 @@ app.get('/', function (req, res, next) {
     res.status(200);
 });
 
+app.get('/createrecipe', function (req, res, next) {
+    res.render('createrecipe');
+    res.status(200);
+});
+
 app.get('/:url', function (req, res, next) {
     for(var i = 0; i < views.length; i++) {
         if (views[i] == req.params.url) {
@@ -34,7 +39,7 @@ app.get('/:url', function (req, res, next) {
         }
     }
     next();
-})
+});
 
 app.get('*', function (req, res) {
     res.render('partials/404');
