@@ -1,12 +1,31 @@
+<div>
+    <h1 id="inputTitle">Insert New Post</h1>
+</div>
 <div class="postModal">
-    <input class="inputFood" placeholder="Title">
+    <input class="inputFood" id="newname" placeholder="Title" maxlength="20">
     <p class="extraInfo">Name of Dish</p>
 </div>
 <div class="postModal">
-    <input class="inputFood" placeholder="Username">
+    <input class="inputFood" id="newusername" placeholder="Username" maxlength="20">
     <p class="extraInfo">Your Name</p>
 </div>
 <div class="postModal">
-    <textarea class="inputFood" class="textareas" style="max-width: 15em;" placeholder="Ingredients"></textarea>
+    <input class="inputFood" id="newphotourl" placeholder="Photo URL" maxlength="50">
+    <p class="extraInfo">Photo URL</p>
+</div>
+<div class="postModal">
+    <textarea class="inputFood" class="textareas" id="newingredients" style="max-width: 13em; min-width: 13em;" placeholder="Ingredients"></textarea>
     <p class="extraInfo">Ingredients</p>
+</div>
+<div class="postModal">
+    <textarea class="inputFood" class="textareas" id="newrecipe" style="max-width: 13em; min-width: 13em;" placeholder="Recipe"></textarea>
+    <p class="extraInfo">Recipe</p>
+</div>
+<div class="postModal">
+    <textarea class="inputFood" class="textareas" id="newnotes" style="max-width: 13em; min-width: 13em;" placeholder="Commentary"></textarea>
+    <p class="extraInfo">Notes</p>
+</div>
+<div class="buttons">
+    <button type="submit" id="submitbutton">Submit Post</button>
+    <button type="submit" id="refreshbutton">Refresh Preview</button>
 </div>
