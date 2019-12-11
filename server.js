@@ -20,6 +20,15 @@ for(var i = 0; i < views.length; i++) {
     };
 }
 
+app.post('/likerecipe/:index', function (req, res, next) {
+    console.log(req.params.index);
+    console.log(posts[req.params.index]);
+    posts[req.params.index].likes++;
+    res.status(200).send("Liked!");
+    fs.writeFileSync('./posts.json', JSON.stringify(posts, null, 2));
+    console.log("wrote to file");
+});
+
 app.post('/addrecipe', function (req, res, next) {
     if (req.body && req.body.title && req.body.ingredients && req.body.imgurl && req.body.recipe && req.body.commentary && req.body.user) {
         var newpost = {
@@ -50,6 +59,13 @@ app.get('/', function (req, res, next) {
 
 app.get('/createrecipe', function (req, res, next) {
     res.render('createrecipe');
+    res.status(200);
+});
+
+
+app.get('/recipes/:postnum', function (req, res, next) {
+    console.log(posts[req.params.postnum]);
+    res.render('blankpost', {post : Array(posts[req.params.postnum])[0]});
     res.status(200);
 });
 

@@ -1,23 +1,24 @@
-{{#each posts}}
-<div class='post'>
-    <img src="{{imgurl}}" id='img'>
-    <h1 id='title'>Title : {{title}}</h1>
-    <h2 id='user'>User : {{user}}</h2>
-    <p id='ingredients'>Ingredients : {{ingredients}}</p>
-    <p id='recipe'>Recipe : {{recipe}}</p>
-    <p id='commentary'>Commentary : {{commentary}}</p>
+<div class='popular-posts' id='poppost'>
+    <button id='filter-header'>Post Filters ↡</h1>
+    <button class='option' id='popular'>Popular</button>
+    <button class='option' id='usernamesearch'>Username</button>
+    <button class='option' id='titlenamesearch'>Title</button>
+    <input type="text" id='Username'>
+    <input type="text" id='Titlename'>
 </div>
-{{/each}}
 
-<div class='popular-posts'>
-    <h1 id='filter-header'>Post Filters</h1>
-    <h1>Popular Posts</h1>
-    <div class='categories'>
-        <a href=#>All Time</a>
-        <a href=#>Previous Week</a>
-        <a href=#>Previous 24 Hours</a>
+<div class='recipes' id='recipes'>
+    {{#each posts}}
+    <div class='post'>
+        <img src="{{imgurl}}" id='img'>
+        <h1 id='title'>Title : {{title}}</h1>
+        <h2 id='user'>User : {{user}}</h2>
+        <div class='misc'>
+            <p id='ingredients'>Ingredients : {{ingredients}}</p>
+            <p id='recipe'>Recipe : {{recipe}}</p>
+            <p id='commentary'>Commentary : {{commentary}}</p>
+        </div>
+        <button class='like' id='like'>Like this Recipe! {{likes}} likes!</button>
     </div>
-    <h1>Username</h1>
-    <h1>Title</h1>
-    <h1>Best</h1>   
+    {{/each}}
 </div>

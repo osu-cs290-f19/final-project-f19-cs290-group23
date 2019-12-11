@@ -3,4 +3,5 @@
     position: relative;
     left: 25em;
     bottom: 40em;
+    max-width: 70em;
 }

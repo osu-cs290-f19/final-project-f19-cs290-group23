@@ -6,7 +6,7 @@
     "recipe": "First, boil the noodles. Then, make the sauce. Then, mix all together! Finally, eat!",
     "commentary": "One of my favorite meals! I cook this all the time!",
     "user": "Keith Stevens",
-    "likes": "0",
+    "likes": 34,
     "date": "12/9/19"
   },
   {
@@ -16,7 +16,7 @@
     "recipe": "To make a testpost, you need the tears of a dev",
     "commentary": "I really enjoy testposts! Eat them with your friends!",
     "user": "Steve Keithens",
-    "likes": "0",
+    "likes": 7,
     "date": "12/9/19"
   },
   {
@@ -26,7 +26,7 @@
     "recipe": "To make a testpost, you need the tears of a dev",
     "commentary": "I really enjoy testposts! Eat them with your friends! ",
     "user": "Keve Stethens",
-    "likes": "0",
+    "likes": 3,
     "date": "12/9/19"
   }
 ]
