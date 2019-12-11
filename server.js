@@ -22,19 +22,23 @@ for(var i = 0; i < views.length; i++) {
 
 app.post('/addrecipe', function (req, res, next) {
     if (req.body && req.body.title && req.body.ingredients && req.body.imgurl && req.body.recipe && req.body.commentary && req.body.user) {
-        fs.writeFileSync('./posts.json', {
+        var newpost = {
             "title": req.body.title,
             "ingredients": req.body.ingredients,
-            "imgurl": imgurl,
-            "recipe": recipe,
-            "commentary": commentary,
-            "user": user,
+            "imgurl": req.body.imgurl,
+            "recipe": req.body.recipe,
+            "commentary": req.body.commentary,
+            "user": req.body.user,
             "likes": 0,
-            "data": new Date()
-        })
+        }
+        console.log(posts);
+        posts.push(newpost);
+        console.log(posts);
+        fs.writeFileSync('./posts.json', JSON.stringify(posts, null, 2));
         res.status(200).send("Added post!");
     }
     else {
+        console.log(req.body);
         res.status(400).send("Post failed! Missing content.");
     }
 });
