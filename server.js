@@ -4,7 +4,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var express_handlebars = require('express-handlebars'); 
 var app = express();
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 80;
 
 app.engine('handlebars', express_handlebars({defaultLayout: 'skeleton'}));
 app.set('view engine', 'handlebars');
