@@ -53,7 +53,7 @@ app.post('/addrecipe', function (req, res, next) {
 });
 
 app.post('/changecommentary/:recipe', function (req, res, next) {
-    posts[req.params.recipe].commentary = req.body.commentary;
+    posts[req.params.recipe].commentary.push(req.body.commentary);
     console.log(posts);
     fs.writeFileSync('./posts.json', JSON.stringify(posts, null, 2));
     res.status(200).send("Added commentary!");

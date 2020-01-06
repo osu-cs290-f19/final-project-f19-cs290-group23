@@ -4,6 +4,10 @@
     <h2 id='user'>User : {{user}}</h2>
     <p id='ingredients'>Ingredients : {{ingredients}}</p>
     <p id='recipe'>Recipe : {{recipe}}</p>
-    <p id='commentary'>Commentary : {{commentary}}</p>
+    <p id='commentary'>Comments-- 
+        {{#each commentary}} 
+        <br>{{commentary}}
+        {{/each}}
+    </p>
     <button class='like' id='like'>Like this Recipe! {{likes}} likes!</button>
 </div>

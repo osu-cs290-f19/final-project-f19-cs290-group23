@@ -16,7 +16,10 @@
         <div class='misc'>
             <p id='ingredients'>Ingredients : {{ingredients}}</p>
             <p id='recipe'>Recipe : {{recipe}}</p>
-            <p id='commentary'>Commentary : {{commentary}}</p>
+            <p id='commentary'>Comments-- 
+                {{#each commentary as |item i|}} 
+                <br>{{item}}
+                {{/each}}</p>
         </div>
         <button class='like' id='like'>Like this Recipe! {{likes}} likes!</button>
         <button class='moreinfo' id='moreinfo'>Edit commentary!</button>
