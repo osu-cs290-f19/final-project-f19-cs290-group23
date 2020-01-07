@@ -36,7 +36,7 @@ app.post('/addrecipe', function (req, res, next) {
             "ingredients": req.body.ingredients,
             "imgurl": req.body.imgurl,
             "recipe": req.body.recipe,
-            "commentary": req.body.commentary,
+            "commentary": [req.body.commentary],
             "user": req.body.user,
             "likes": 0,
         }

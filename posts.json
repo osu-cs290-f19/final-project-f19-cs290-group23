@@ -4,16 +4,21 @@
     "ingredients": "actually i don't know what goes into pancakes",
     "imgurl": "https://cdn.apartmenttherapy.info/image/fetch/f_auto,q_auto:eco,c_fit,w_760/https%3A%2F%2Fstorage.googleapis.com%2Fgen-atmedia%2F3%2F2018%2F12%2F8cfbcbb2919742682345681d469b7417a73e4dfe.jpeg",
     "recipe": "i don't know how to make them either",
-    "commentary": "You better not break my website NIEK",
+    "commentary": [
+      "You better not break my website NIEK",
+      "butts"
+    ],
     "user": "mrkeith",
-    "likes": 3
+    "likes": 4
   },
   {
     "title": "World War 3",
     "ingredients": "USA bombs",
     "imgurl": "https://i.imgur.com/pvQQddu.jpg",
     "recipe": "Throw bombs on Iran, and wait",
-    "commentary": "Best recipe ever, it literally blew me up",
+    "commentary": [
+      "Best recipe ever, it literally blew me up"
+    ],
     "user": "Qassem Soleimani",
     "likes": 0
   },
@@ -22,7 +27,9 @@
     "ingredients": "ginger mom\nginger dad",
     "imgurl": "https://i.imgur.com/8qhTvTu.jpg",
     "recipe": "big sexy",
-    "commentary": "hello i am ginger",
+    "commentary": [
+      "hello i am ginger"
+    ],
     "user": "Aerh",
     "likes": 278
   }
